@@ -11,6 +11,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
+
 
 import java.io.IOException;
 
@@ -26,7 +28,10 @@ public class controlAddcomment {
    private Text addposttext;
 
    @FXML
+   private Label firstcomment;
+   @FXML
    private Button backhomecomment;
+
 
    @FXML
    private Button postimg;
@@ -56,5 +61,14 @@ public class controlAddcomment {
       stage.show();
 
    }
+   @FXML
+   void sendcooment(ActionEvent event) {
+      String comm;
+      comm = posttxt.getText();
+      firstcomment.setText(comm);
+
+
+   }
+
 
 }

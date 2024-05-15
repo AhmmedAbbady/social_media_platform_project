@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
@@ -54,6 +55,8 @@ public class controller_post {
         displayField.setText(userText);
     }
     @FXML
+    private Label labePost;
+    @FXML
     private ImageView addpostimg;
     @FXML
     private Button btngohome;
@@ -63,6 +66,8 @@ public class controller_post {
 
     @FXML
     private Button postimg;
+    @FXML
+    private Button sendpost;
 
     @FXML
     private TextField posttxt;
@@ -77,6 +82,12 @@ public class controller_post {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
+    }
+    @FXML
+    void sendnowpost(ActionEvent event) {
+        String postTexxxx= posttxt.getText();
+        labePost.setText(postTexxxx);
 
     }
 
