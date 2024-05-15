@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1020.0" prefWidth="1310.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: grey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginScene">
+   <children>
+      <Label fx:id="welcome" alignment="CENTER" layoutX="-102.0" layoutY="36.0" prefHeight="411.0" prefWidth="1513.0" text="Welcome" textAlignment="CENTER">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEmail" alignment="CENTER" layoutX="373.0" layoutY="372.0" prefHeight="107.0" prefWidth="716.0" promptText="Enter your E-mail">
+         <font>
+            <Font size="51.0" />
+         </font></TextField>
+      <Text fx:id="Email_text" layoutX="129.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Text>
+      <Text fx:id="Pass_text" layoutX="60.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="294.99991861979174">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_login" layoutX="841.0" layoutY="659.0" mnemonicParsing="false" onAction="#login" prefHeight="87.0" prefWidth="247.0" text="Login">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <Button fx:id="btn_signup" layoutX="848.0" layoutY="759.0" mnemonicParsing="false" onAction="#Signup" prefHeight="89.0" prefWidth="244.0" text="SignUp">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <Text fx:id="dont_have_acc" layoutX="207.0" layoutY="833.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passworHiddd" alignment="CENTER" layoutX="370.0" layoutY="523.0" prefHeight="105.0" prefWidth="722.0" promptText="Enter Password">
+         <font>
+            <Font size="53.0" />
+         </font></PasswordField>
+      <Label fx:id="checktoLogin" layoutX="81.0" layoutY="661.0" prefHeight="97.0" prefWidth="755.0" textFill="#101d72">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

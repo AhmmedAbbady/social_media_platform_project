@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox id="postcontainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlAddcomment">
+    <children>
+        <Pane prefHeight="83.0" prefWidth="600.0">
+            <children>
+                <Text id="addposttxt" fx:id="addposttext" fill="#682ab9" layoutX="199.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Comment">
+                    <font>
+                        <Font name="System Bold" size="34.0" />
+                    </font>
+                </Text>
+            <Button fx:id="backhomecomment" layoutX="9.0" layoutY="5.0" mnemonicParsing="false" onAction="#gohomecomment" prefHeight="29.0" prefWidth="72.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button id="addButton" fx:id="postimg" alignment="CENTER" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" text="Add image" textFill="#902a2a">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <ImageView id="addpostim" fx:id="addpostimg" fitHeight="207.0" fitWidth="600.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#addimg" pickOnBounds="true" preserveRatio="true" />
+        <VBox id="postvb" fx:id="postveb" prefHeight="120.0" prefWidth="600.0">
+            <children>
+                <TextField id="posttextfield" fx:id="posttxt" alignment="CENTER" onAction="#addtext" prefHeight="121.0" prefWidth="600.0" promptText="Add text">
+                    <font>
+                        <Font name="Algerian" size="30.0" />
+                    </font>
+                </TextField>
+            </children>
+        </VBox>
+    </children>
+</VBox>

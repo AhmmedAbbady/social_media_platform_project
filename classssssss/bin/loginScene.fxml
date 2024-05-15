@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginScene">
+   <children>
+      <Label fx:id="welcome" alignment="CENTER" layoutX="372.0" layoutY="134.0" text="Welcome" textAlignment="CENTER">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEmail" alignment="CENTER" layoutX="345.0" layoutY="249.0" prefHeight="35.0" prefWidth="267.0" promptText="Enter your E-mail" />
+      <TextField fx:id="tfPassword" alignment="CENTER" layoutX="345.0" layoutY="305.0" prefHeight="35.0" prefWidth="267.0" promptText="Enter Your Password" />
+      <Text fx:id="Email_text" layoutX="274.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="Pass_text" layoutX="253.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_login" layoutX="557.0" layoutY="353.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="55.0" text="Login" />
+      <Button fx:id="btn_signup" layoutX="555.0" layoutY="402.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="SignUp" />
+      <Text fx:id="dont_have_acc" layoutX="363.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
