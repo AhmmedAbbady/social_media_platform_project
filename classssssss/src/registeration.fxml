@@ -37,9 +37,9 @@
             <Font name="System Bold" size="68.0" />
          </font>
       </Text>
-      <Label fx:id="label_singup" alignment="CENTER" layoutX="18.0" layoutY="246.0" prefHeight="36.0" prefWidth="346.0" textFill="#0b1c70">
+      <Label fx:id="label_singup" alignment="CENTER" layoutX="302.0" layoutY="621.0" prefHeight="50.0" prefWidth="498.0" textFill="#0b1c70">
          <font>
-            <Font name="System Bold" size="10.0" />
+            <Font name="System Bold" size="34.0" />
          </font>
       </Label>
    </children>
