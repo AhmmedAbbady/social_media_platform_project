@@ -50,7 +50,7 @@ public class control_registeration {
 
     }
         else{
-            label_singup.setText(" Invalid Input..Email Ends with '@gmail.com' Password Starts Capital");
+            label_singup.setText(" Invalid Input..Email Ends with '@gmail.com'& Password Starts Capital");
 
         }
     }

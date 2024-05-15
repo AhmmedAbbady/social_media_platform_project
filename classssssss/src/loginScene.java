@@ -65,7 +65,7 @@ public class loginScene {
             stage.setScene(scene);
             stage.show();
         } else {
-            checktoLogin.setText("  Invalid Input..Email Ends with '@gmail.com' Password Starts Capital");
+            checktoLogin.setText("  Invalid Input..Email Ends with '@gmail.com' & Password Starts Capital");
         }
     }
 @FXML
