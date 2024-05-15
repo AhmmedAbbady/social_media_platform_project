@@ -18,7 +18,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="831.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control_newsFeeeed">
     <top>
-        <HBox id="newsbox" alignment="TOP_CENTER" prefHeight="117.0" prefWidth="691.0" BorderPane.alignment="CENTER">
+        <HBox id="newsbox" fx:id="cr7img" alignment="TOP_CENTER" prefHeight="117.0" prefWidth="691.0" BorderPane.alignment="CENTER">
             <children>
                 <Text id="newstext" fx:id="newstext" fill="#5054ab" fontSmoothingType="LCD" stroke="#5257a8" strokeWidth="0.0" text="News feed">
                     <font>
@@ -90,7 +90,7 @@
             <content>
                 <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="281.0" prefWidth="453.0">
                     <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="159.0" prefWidth="451.0">
                             <children>
                                 <ImageView id="newsim1" fx:id="imgview1" fitHeight="119.0" fitWidth="439.0" layoutX="7.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" />
                                 <Button fx:id="addcomm_1" layoutX="345.0" layoutY="103.0" mnemonicParsing="false" onAction="#addcommentbutton1" prefHeight="28.0" prefWidth="102.0" text="Add comment" />
@@ -99,6 +99,16 @@
                                         <Image url="@../../../../Desktop/th.jpg" />
                                     </image>
                                 </ImageView>
+                        <ImageView fx:id="img1" fitHeight="127.0" fitWidth="142.0" layoutX="110.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cr7.JPG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="uer1" layoutX="2.0" layoutY="14.0" prefHeight="25.0" prefWidth="101.0" text="\@Mohamed_22">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
                             </children>
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -110,6 +120,16 @@
                                         <Image url="@../../../../Desktop/th.jpg" />
                                     </image>
                                 </ImageView>
+                        <Label fx:id="user22" layoutX="5.0" layoutY="11.0" prefHeight="19.0" prefWidth="101.0" text="\@mahmoud_74">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img22" fitHeight="131.0" fitWidth="152.0" layoutX="113.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@222.JPG" />
+                           </image>
+                        </ImageView>
                             </children>
                         </AnchorPane>
                     </items>
@@ -120,11 +140,16 @@
     <right>
         <VBox id="notificationsbox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
-                <Text id="notifications text" fx:id="notificationstext" fill="#d01717" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications">
+                <Text id="notifications text" fx:id="notificationstext" fill="#d01717" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications" wrappingWidth="139.0220947265625">
                     <font>
                         <Font size="24.0" />
                     </font>
                 </Text>
+            <ImageView fitHeight="94.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@5555.JPG" />
+               </image>
+            </ImageView>
             </children>
         </VBox>
     </right>

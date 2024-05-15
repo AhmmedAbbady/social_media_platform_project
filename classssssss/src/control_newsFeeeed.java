@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.SplitMenuButton;
@@ -27,13 +28,15 @@ public class control_newsFeeeed {
 
     @FXML
     private Button addpostBtn;
-    @FXML
-    private Button logoutttt;
+
     @FXML
     private ImageView addposticon;
 
     @FXML
     private ImageView addpostimg;
+
+    @FXML
+    private HBox cr7img;
 
     @FXML
     private SplitMenuButton frienddd;
@@ -42,16 +45,28 @@ public class control_newsFeeeed {
     private ImageView icon_accNews;
 
     @FXML
+    private ImageView img1;
+
+    @FXML
+    private ImageView img22;
+
+    @FXML
     private ImageView imgview1;
 
     @FXML
     private ImageView imgview2;
 
     @FXML
+    private Label lausername;
+
+    @FXML
     private ImageView like_post1;
 
     @FXML
     private ImageView like_post2;
+
+    @FXML
+    private Button logoutttt;
 
     @FXML
     private Text newstext;
@@ -63,10 +78,13 @@ public class control_newsFeeeed {
     private ImageView ppimage;
 
     @FXML
-    private Label lausername;
+    private Button profileBtn;
 
     @FXML
-    private Button profileBtn;
+    private Label uer1;
+
+    @FXML
+    private Label user22;
 
     @FXML
     void Switchtoprofile(MouseEvent event) {
