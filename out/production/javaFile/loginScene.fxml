@@ -46,7 +46,7 @@
          <font>
             <Font size="53.0" />
          </font></PasswordField>
-      <Label fx:id="checktoLogin" layoutX="81.0" layoutY="661.0" prefHeight="97.0" prefWidth="755.0" textFill="#101d72">
+      <Label fx:id="checktoLogin" layoutX="41.0" layoutY="661.0" prefHeight="97.0" prefWidth="795.0" textFill="#101d72">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
